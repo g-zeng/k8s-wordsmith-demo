@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: db
-        image: r.cfcr.io/gzeng/wordsmith-db
+        image: gcr.io/double-fusion-269323/wordsmith-db
         ports:
         - containerPort: 5432
           name: db
@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
       - name: words
-        image: r.cfcr.io/gzeng/wordsmith-api
+        image: gcr.io/double-fusion-269323/wordsmith-api
         ports:
         - containerPort: 8080
           name: api
@@ -52,7 +52,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: r.cfcr.io/gzeng/wordsmith-web
+        image: gcr.io/double-fusion-269323/wordsmith-web
         ports:
         - containerPort: 80
           name: words-web
