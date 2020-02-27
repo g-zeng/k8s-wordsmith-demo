@@ -64,5 +64,3 @@ func copy(url, ip string, w http.ResponseWriter) error {
 	_, err = w.Write(buf)
 	return err
 }
-
-
